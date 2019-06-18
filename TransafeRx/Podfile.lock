@@ -1,0 +1,66 @@
+PODS:
+  - ABPadLockScreen (3.4.2)
+  - Alamofire (4.8.2)
+  - Charts (3.2.2):
+    - Charts/Core (= 3.2.2)
+  - Charts/Core (3.2.2)
+  - DropDown (2.3.13)
+  - EasyTipView (2.0.4)
+  - Eureka (4.3.1)
+  - GRDB.swift (3.7.0)
+  - IQKeyboardManagerSwift (6.0.5)
+  - KeychainAccess (3.1.2)
+  - KTCenterFlowLayout (1.3.1)
+  - KVNProgress (2.3.5)
+  - ObjectMapper (3.4.2)
+  - UIColor_Hex_Swift (4.2.0)
+
+DEPENDENCIES:
+  - ABPadLockScreen
+  - Alamofire (~> 4.8)
+  - Charts
+  - DropDown
+  - EasyTipView
+  - Eureka (~> 4.3.1)
+  - GRDB.swift
+  - IQKeyboardManagerSwift (~> 6.0.4)
+  - KeychainAccess (~> 3.1.2)
+  - KTCenterFlowLayout
+  - KVNProgress
+  - ObjectMapper
+  - UIColor_Hex_Swift (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ABPadLockScreen
+    - Alamofire
+    - Charts
+    - DropDown
+    - EasyTipView
+    - Eureka
+    - GRDB.swift
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - KTCenterFlowLayout
+    - KVNProgress
+    - ObjectMapper
+    - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  ABPadLockScreen: 6edd4e5fd580a9f60f55b3ec59011ebec2801a8e
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  EasyTipView: 4f8beae0a82db2ca4a9b5fd658785fc5f61d296b
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
+  GRDB.swift: 51cc9e57ae8ff7083a9d674c97925aa1de06aac5
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  KTCenterFlowLayout: 6e02b50ab2bd865025ae82fe266ed13b6d9eaf97
+  KVNProgress: d7046cce142f1aeb740db39dc3cacfe910fac354
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
+
+PODFILE CHECKSUM: 96d7bb539d907b8994d2e9007f0b6b94b2a64b3f
+
+COCOAPODS: 1.5.3

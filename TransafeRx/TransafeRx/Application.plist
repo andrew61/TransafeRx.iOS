@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>VIDEO_PATH</key>
+	<string>https://tachl.musc.edu/TXP_API</string>
+	<key>IMAGE_PATH</key>
+	<string>https://tachl.musc.edu/TXP_API</string>
+	<key>API_SECRET</key>
+	<string>b49a93b7-7588-44d1-bde4-cd5cae55ebfd</string>
+	<key>API_PATH</key>
+	<string>https://tachl.musc.edu/TXP_API</string>
+	<key>API_CLIENT_ID</key>
+	<string>TransafeRxiOS</string>
+</dict>
+</plist>

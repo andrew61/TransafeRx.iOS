@@ -1,0 +1,105 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TransafeRx' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TransafeRx
+  pod 'KeychainAccess', '~> 3.1.2'
+  pod 'UIColor_Hex_Swift', '~> 4.2.0'
+  pod 'Alamofire', '~> 4.8'
+  pod 'KVNProgress'
+  pod 'ObjectMapper'
+  pod 'EasyTipView'
+  pod 'ABPadLockScreen'
+  pod 'Eureka', '~> 4.3.1'
+  pod 'KTCenterFlowLayout'
+  #pod 'DatePickerDialog'
+  #pod 'FMDB'
+  pod 'IQKeyboardManagerSwift', '~> 6.0.4'
+  pod 'Charts'
+  pod 'DropDown'
+  pod 'GRDB.swift'
+
+  target 'TransafeRxTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TransafeRxUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        
+        if ['UIColor_Hex_Swift'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['Alamofire'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['DatePickerDialog'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.0'
+            end
+        end
+        
+        if ['KeychainAccess'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['IQKeyboardManagerSwift'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['Charts'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['EasyTipView'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+        
+        if ['Eureka'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['NotificationBannerSwift'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['PopupDialog'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        end
+        
+        if ['GRDB.swift'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+    end
+end

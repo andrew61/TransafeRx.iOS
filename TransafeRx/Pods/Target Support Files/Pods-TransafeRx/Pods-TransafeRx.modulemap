@@ -1,0 +1,6 @@
+framework module Pods_TransafeRx {
+  umbrella header "Pods-TransafeRx-umbrella.h"
+
+  export *
+  module * { export * }
+}

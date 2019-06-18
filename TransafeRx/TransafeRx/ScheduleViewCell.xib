@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ScheduleViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleViewCell" rowHeight="79" id="sgu-XO-9vV" customClass="ScheduleViewCell" customModule="TransafeRx" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sgu-XO-9vV" id="p8a-dR-sUE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0k-JS-0wG">
+                        <rect key="frame" x="77" y="8" width="290" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIU-Du-VoL">
+                                <rect key="frame" x="8" y="34" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-a7-HSq">
+                                <rect key="frame" x="8" y="8" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SrG-a7-HSq" firstAttribute="top" secondItem="c0k-JS-0wG" secondAttribute="topMargin" id="5FC-AF-xuq"/>
+                            <constraint firstItem="SrG-a7-HSq" firstAttribute="trailing" secondItem="ZIU-Du-VoL" secondAttribute="trailing" id="6I7-hG-Xqc"/>
+                            <constraint firstItem="ZIU-Du-VoL" firstAttribute="bottom" secondItem="c0k-JS-0wG" secondAttribute="bottomMargin" id="8ld-Y7-3Pr"/>
+                            <constraint firstItem="SrG-a7-HSq" firstAttribute="leading" secondItem="ZIU-Du-VoL" secondAttribute="leading" id="Lbq-Un-icO"/>
+                            <constraint firstItem="SrG-a7-HSq" firstAttribute="trailing" secondItem="c0k-JS-0wG" secondAttribute="trailingMargin" id="gjS-cH-zu7"/>
+                            <constraint firstItem="SrG-a7-HSq" firstAttribute="leading" secondItem="c0k-JS-0wG" secondAttribute="leadingMargin" id="hKg-hO-gfl"/>
+                            <constraint firstItem="ZIU-Du-VoL" firstAttribute="top" secondItem="SrG-a7-HSq" secondAttribute="bottom" constant="5" id="iAk-WW-jLm"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uncheckbox.png" translatesAutoresizingMaskIntoConstraints="NO" id="9s0-Uz-YWB">
+                        <rect key="frame" x="8" y="8" width="51" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="k5T-KD-0XF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c0k-JS-0wG" firstAttribute="trailing" secondItem="p8a-dR-sUE" secondAttribute="trailingMargin" id="0qr-iL-pLh"/>
+                    <constraint firstItem="c0k-JS-0wG" firstAttribute="leading" secondItem="9s0-Uz-YWB" secondAttribute="trailing" constant="18" id="7St-DN-xLh"/>
+                    <constraint firstItem="9s0-Uz-YWB" firstAttribute="top" secondItem="c0k-JS-0wG" secondAttribute="top" id="KZp-n2-xTh"/>
+                    <constraint firstItem="9s0-Uz-YWB" firstAttribute="centerY" secondItem="p8a-dR-sUE" secondAttribute="centerY" id="PPy-rJ-RmW"/>
+                    <constraint firstItem="9s0-Uz-YWB" firstAttribute="top" secondItem="p8a-dR-sUE" secondAttribute="topMargin" id="Yqb-BP-YzY"/>
+                    <constraint firstItem="9s0-Uz-YWB" firstAttribute="bottom" secondItem="c0k-JS-0wG" secondAttribute="bottom" id="iSm-e4-3wU"/>
+                    <constraint firstItem="9s0-Uz-YWB" firstAttribute="leading" secondItem="p8a-dR-sUE" secondAttribute="leadingMargin" id="kST-sf-gFW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkboxImageView" destination="9s0-Uz-YWB" id="WIT-wi-IM1"/>
+                <outlet property="instructionsLabel" destination="ZIU-Du-VoL" id="mHQ-U6-99Y"/>
+                <outlet property="medicationLabel" destination="SrG-a7-HSq" id="Gh4-IJ-r9v"/>
+            </connections>
+            <point key="canvasLocation" x="-453.5" y="-32.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uncheckbox.png" width="100" height="100"/>
+    </resources>
+</document>
