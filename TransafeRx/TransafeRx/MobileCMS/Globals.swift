@@ -9,7 +9,5 @@
 import Foundation
 
 struct Globals {
-    static var imageBase = "https://tachl.musc.edu/TXP_API"
-    static var videoBase = "https://tachl.musc.edu/TXP_API"
     static var baseVC: UIViewController?
 }
