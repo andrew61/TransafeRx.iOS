@@ -43,7 +43,6 @@ public enum ProtocolType {
     case irc
     case nntp
     case pop3
-    case smtp
     case socks
     case imap
     case ldap
@@ -1327,8 +1326,6 @@ extension ProtocolType: RawRepresentable, CustomStringConvertible {
             self = .nntp
         case String(kSecAttrProtocolPOP3):
             self = .pop3
-        case String(kSecAttrProtocolSMTP):
-            self = .smtp
         case String(kSecAttrProtocolSOCKS):
             self = .socks
         case String(kSecAttrProtocolIMAP):
@@ -1396,8 +1393,6 @@ extension ProtocolType: RawRepresentable, CustomStringConvertible {
             return String(kSecAttrProtocolNNTP)
         case .pop3:
             return String(kSecAttrProtocolPOP3)
-        case .smtp:
-            return String(kSecAttrProtocolSMTP)
         case .socks:
             return String(kSecAttrProtocolSOCKS)
         case .imap:
@@ -1463,8 +1458,6 @@ extension ProtocolType: RawRepresentable, CustomStringConvertible {
             return "NNTP"
         case .pop3:
             return "POP3"
-        case .smtp:
-            return "SMTP"
         case .socks:
             return "SOCKS"
         case .imap:

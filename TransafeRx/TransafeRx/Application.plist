@@ -4,10 +4,7 @@
 <dict>
 	<key>VIDEO_PATH</key>
 	<key>IMAGE_PATH</key>
-	<key>API_SECRET</key>
 	<string>b49a93b7-7588-44d1-bde4-cd5cae55ebfd</string>
-	<key>API_PATH</key>
-	<key>API_CLIENT_ID</key>
 	<string>TransafeRxiOS</string>
 </dict>
 </plist>
